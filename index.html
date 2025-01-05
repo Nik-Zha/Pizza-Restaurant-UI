@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Name</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta name="description" content="Welcome to the restaurant's official website.">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Bootstrap CSS for Carousel -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Pizzaterio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to the Best Restaurant</h2>
+            <a href="#menu" class="btn">Explore Menu</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-us">
+        <div class="container">
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>Our restaurant has been serving delicious food since 1999. We prioritize quality ingredients and a unique dining experience.</p>
+            </div>
+            <div class="about-image">
+                <img src="images/about-us.avif" alt="Restaurant interior">
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <h3>Pasta Primavera</h3>
+                    <p>A delightful pasta dish with fresh veggies and a creamy sauce.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Grilled Steak</h3>
+                    <p>Juicy steak grilled to perfection with a side of mashed potatoes.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Caesar Salad</h3>
+                    <p>Crispy romaine lettuce with creamy Caesar dressing and croutons.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Margherita Pizza</h3>
+                    <p>Classic pizza with fresh tomatoes, mozzarella, and basil.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carousel Section -->
+    <section id="carousel">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/caurosel1.jpg" class="d-block w-100" alt="Dish 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/caurosel2.jpeg" class="d-block w-100" alt="Dish 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/caurosel3.jpeg" class="d-block w-100" alt="Dish 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/caurosel4.jpg" class="d-block w-100" alt="Dish 4">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/caurosel5.jpeg" class="d-block w-100" alt="Dish 5">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExample" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExample" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Our Gallery</h2>
+            <div class="gallery-items">
+                <img src="images/gallery1.jpg" alt="Gallery image 1">
+                <img src="images/gallery2.jpg" alt="Gallery image 2">
+                <img src="images/gallery3.jpeg" alt="Gallery image 3">
+                <img src="images/gallery4.jpeg" alt="Gallery image 4">
+                <img src="images/gallery5.jpeg" alt="Gallery image 5">
+            </div>
+        </div>
+    </section>
+
+    <!-- Find Us Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-info">
+                <h2>Find Us</h2>
+                <p>123 Main Street, City, Country</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Email: info@restaurant.com</p>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-left">
+                <p>&copy; 2025 Restaurant Name. All Rights Reserved.</p>
+            </div>
+            <div class="footer-right">
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS (for Carousel functionality) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

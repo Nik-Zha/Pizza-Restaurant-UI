@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    z-index: 100;
+    padding: 10px 0;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+header nav ul li {
+    margin-right: 20px;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+header .social-icons a {
+    margin-left: 10px;
+    color: white;
+}
+
+/* Hero Section */
+/* Hero Section with Pizza Background */
+.hero {
+    background-image: url('images/pizza-background.jpeg'); /* Path to your pizza image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background to make text readable */
+    padding: 30px;
+    border-radius: 8px;
+}
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.hero .btn {
+    background-color: #FF5722;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+/* About Us Section */
+.about-us {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+    background-color: #f5f5f5;
+}
+.about-text {
+    width: 45%;
+}
+.about-text h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.about-image img {
+    width: 50%;
+    border-radius: 8px;
+}
+
+/* Menu Section */
+.menu {
+    background-color: #fff;
+    padding: 50px 0;
+}
+.menu h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+.menu-item {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Carousel Section */
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+
+/* Gallery Section */
+.gallery {
+    background-color: #fff;
+    padding: 50px 0;
+}
+.gallery h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+.gallery-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+.gallery-items img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Contact Section */
+.contact {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+.contact-info {
+    width: 40%;
+}
+.contact-info h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.map {
+    width: 55%;
+}
+iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+footer ul li {
+    margin-right: 20px;
+}
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-us {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-text, .about-image {
+        width: 80%;
+        text-align: center;
+    }
+    .contact {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-info, .map {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .gallery-items {
+        grid-template-columns: 1fr;
+    }
+}
